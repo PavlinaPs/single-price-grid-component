@@ -1,0 +1,133 @@
+@use 'index' as *;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    min-height: 100vh;
+    font-family: $ff;
+    font-size: $fs-normal;
+    font-weight: $fw-regular;
+    background-color: $clr-light-gray;
+}
+
+.price {
+    display: grid;
+    grid-template-areas:
+        'join'
+        'price'
+        'why' ;
+    width: 31.15rem;
+    box-shadow: 0rem 1rem 4rem $clr-grayish-blue-a;
+}
+
+@media (min-width: $desktop) {
+    body {
+        margin: 0
+    }
+}
+
+.price__section {
+    padding: 0 2.45rem;
+}
+
+/* join section */
+.price__section--join {
+    grid-area: join;
+    padding-bottom: 3.2rem;
+    background-color: $clr-white;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.price__title {
+    margin-top: 2.8rem;
+    margin-bottom: 2.5rem;
+    font-size: $fs-title;
+    font-weight: $fw-bold;
+    color: $clr-cyan;
+}
+
+.price__subtitle--join {
+    font-size: $fs-subtitle-join;
+    font-weight: $fw-bold;
+    color: $clr-bright-yellow;
+    line-height: 1.35;
+}
+
+.price__text--join {
+    margin-top: 1.5rem;
+    font-size: $fs-small;
+    color: $clr-grayish-blue;
+    line-height: 1.9;
+}
+/* end of join section */
+
+.price__subtitle {
+    font-size: $fs-subtitle;
+    font-weight: $fw-bold;
+    color: $clr-white;
+}
+
+/* price section */
+.price__section--price {
+    grid-area: price;
+    padding-top: 2.5rem;
+    padding-bottom: 2.4rem;
+    background-color: $clr-cyan-darker;
+}
+
+.price__text--container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1.85rem;
+}
+
+.price__text--price-value {
+    font-size: $fs-price;
+    font-weight: $fw-bold;
+    color: $clr-white;
+}
+
+.price__text--price-description {
+    align-self: center;
+    color: $clr-white-a;
+}
+
+.price__text {
+    margin-top: 0.8rem;
+    color: $clr-white;
+}
+
+.price__sign-up {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1.45rem 0;
+    color: $clr-white;
+    background-color: $clr-bright-yellow;
+    border: none;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0.5rem 0.5rem 0.75rem hsla(0, 0%, 0%, 0.2) );
+}
+/* end of price section */
+
+/* why section */
+.price__section--why {
+    grid-area: why;
+    padding-top: 2.5rem;
+    padding-bottom: 2.4rem;
+    background-color: $clr-cyan;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.price__text--why {
+    margin-top: 1.77rem;
+    font-size: $fs-small;
+    color: $clr-white-a;
+    line-height: 1.46;
+}
+/* why section */

@@ -1,0 +1,32 @@
+// colors primary
+
+$clr-cyan: hsl(179, 62%, 43%);
+$clr-cyan-darker: hsl(179, 62%, 40%);
+$clr-bright-yellow: hsl(71, 73%, 54%);
+
+// colors neutral
+
+$clr-light-gray: hsl(204, 43%, 93%);
+$clr-grayish-blue: hsl(218, 22%, 67%);
+$clr-grayish-blue-a: hsla(218, 22%, 67%, 0.4);
+$clr-white: hsl(0, 0%, 100%, 0.9);
+$clr-white-a: hsla(0, 0%, 100%, 0.6);
+
+
+// typography
+$ff: 'Karla', sans-serif;
+
+$fs-small: 1.37rem;
+$fs-subtitle-join: 1.47rem;
+$fs-subtitle: 1.75rem;
+$fs-normal: 1.6rem;
+$fs-title: 1.95rem;
+$fs-price: 3.1rem;
+
+$fw-regular: 400;
+$fw-bold: 700;
+
+// Mobile: 375px
+// Desktop: 1440px
+// @media
+$desktop: 45em;

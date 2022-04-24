@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 1rem = 10px */
+html {
+  font-size: 62.5%;
+}
+
+.attribution {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  min-height: 100vh;
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: hsl(204deg, 43%, 93%);
+}
+
+.price {
+  display: grid;
+  grid-template-areas: "join" "price" "why";
+  width: 31.15rem;
+  box-shadow: 0rem 1rem 4rem hsla(218deg, 22%, 67%, 0.4);
+}
+
+@media (min-width: 45em) {
+  body {
+    margin: 0;
+  }
+}
+.price__section {
+  padding: 0 2.45rem;
+}
+
+/* join section */
+.price__section--join {
+  grid-area: join;
+  padding-bottom: 3.2rem;
+  background-color: hsla(0deg, 0%, 100%, 0.9);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.price__title {
+  margin-top: 2.8rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.95rem;
+  font-weight: 700;
+  color: hsl(179deg, 62%, 43%);
+}
+
+.price__subtitle--join {
+  font-size: 1.47rem;
+  font-weight: 700;
+  color: hsl(71deg, 73%, 54%);
+  line-height: 1.35;
+}
+
+.price__text--join {
+  margin-top: 1.5rem;
+  font-size: 1.37rem;
+  color: hsl(218deg, 22%, 67%);
+  line-height: 1.9;
+}
+
+/* end of join section */
+.price__subtitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: hsla(0deg, 0%, 100%, 0.9);
+}
+
+/* price section */
+.price__section--price {
+  grid-area: price;
+  padding-top: 2.5rem;
+  padding-bottom: 2.4rem;
+  background-color: hsl(179deg, 62%, 40%);
+}
+
+.price__text--container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1.85rem;
+}
+
+.price__text--price-value {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: hsla(0deg, 0%, 100%, 0.9);
+}
+
+.price__text--price-description {
+  align-self: center;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+
+.price__text {
+  margin-top: 0.8rem;
+  color: hsla(0deg, 0%, 100%, 0.9);
+}
+
+.price__sign-up {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1.45rem 0;
+  color: hsla(0deg, 0%, 100%, 0.9);
+  background-color: hsl(71deg, 73%, 54%);
+  border: none;
+  border-radius: 0.5rem;
+  filter: drop-shadow(0.5rem 0.5rem 0.75rem hsla(0deg, 0%, 0%, 0.2));
+}
+
+/* end of price section */
+/* why section */
+.price__section--why {
+  grid-area: why;
+  padding-top: 2.5rem;
+  padding-bottom: 2.4rem;
+  background-color: hsl(179deg, 62%, 43%);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.price__text--why {
+  margin-top: 1.77rem;
+  font-size: 1.37rem;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  line-height: 1.46;
+}
+
+/* why section *//*# sourceMappingURL=main.css.map */
