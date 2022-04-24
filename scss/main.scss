@@ -20,12 +20,23 @@ body {
         'price'
         'why' ;
     width: 31.15rem;
+    border-radius: 0.5rem;
     box-shadow: 0rem 1rem 4rem $clr-grayish-blue-a;
 }
 
 @media (min-width: $desktop) {
     body {
         margin: 0
+    }
+
+    .price {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'join join'
+            'price why';
+        width: 63.5rem;
+        border-radius: 1rem;
+        box-shadow: 0rem 1rem 3rem $clr-grayish-blue-a;
     }
 }
 
@@ -53,7 +64,7 @@ body {
 .price__subtitle--join {
     font-size: $fs-subtitle-join;
     font-weight: $fw-bold;
-    color: $clr-bright-yellow;
+    color: $clr-bright-yellow-lighter;
     line-height: 1.35;
 }
 
@@ -63,6 +74,36 @@ body {
     color: $clr-grayish-blue;
     line-height: 1.9;
 }
+
+@media (min-width: $desktop) {
+    .price__section {
+        padding: 0 4rem;
+    }
+
+    .price__section--join {
+        padding-bottom: 4rem;
+        padding-left: 4rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    
+    .price__title {
+        margin-top: 3.9rem;
+        margin-bottom: 2.4rem;
+        font-size: $fs-title-desktop;
+    }
+    
+    .price__subtitle--join {
+        font-size: $fs-subtitle-join-desktop;
+    }
+    
+    .price__text--join {
+        margin-top: 0.99rem;
+        font-size: $fs-normal-desktop;
+        line-height: 1.6;
+    }
+}
+
 /* end of join section */
 
 .price__subtitle {
@@ -112,6 +153,14 @@ body {
     border-radius: 0.5rem;
     filter: drop-shadow(0.5rem 0.5rem 0.75rem hsla(0, 0%, 0%, 0.2) );
 }
+
+@media (min-width: $desktop) {
+    .price__section--price {
+        padding-top: 4rem;
+        padding-bottom: 3.95rem;
+        border-bottom-left-radius: 1rem;
+    }
+}
 /* end of price section */
 
 /* why section */
@@ -127,7 +176,16 @@ body {
 .price__text--why {
     margin-top: 1.77rem;
     font-size: $fs-small;
-    color: $clr-white-a;
+    color: $clr-white;
     line-height: 1.46;
+}
+
+@media (min-width: $desktop) {
+    .price__section--why {
+        padding-top: 4rem;
+        padding-bottom: 3.95rem;
+        border-bottom-left-radius: 0rem;
+        border-bottom-right-radius: 1rem;
+    }
 }
 /* why section */

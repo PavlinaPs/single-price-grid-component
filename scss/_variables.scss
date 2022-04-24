@@ -3,6 +3,7 @@
 $clr-cyan: hsl(179, 62%, 43%);
 $clr-cyan-darker: hsl(179, 62%, 40%);
 $clr-bright-yellow: hsl(71, 73%, 54%);
+$clr-bright-yellow-lighter: hsl(66, 73%, 54%);
 
 // colors neutral
 
@@ -18,9 +19,12 @@ $ff: 'Karla', sans-serif;
 
 $fs-small: 1.37rem;
 $fs-subtitle-join: 1.47rem;
+$fs-subtitle-join-desktop: 1.76rem;
 $fs-subtitle: 1.75rem;
 $fs-normal: 1.6rem;
+$fs-normal-desktop: 1.57rem;
 $fs-title: 1.95rem;
+$fs-title-desktop: 2.35rem;
 $fs-price: 3.1rem;
 
 $fw-regular: 400;
